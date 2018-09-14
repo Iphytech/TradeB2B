@@ -1,0 +1,27 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<h1 class="lead">Enter the OTP code send to your mobile device</h1>
+			<div class="thumbnail">
+				<div class="panel-body">
+					<div id="form-div">
+						<form method="post">
+							<input type="hidden" name="__csrf" value="7glkhaSHLDkw88303"> <!--generated token-->
+							<input type="hidden" name="__token" value="{{ body.token }}"> <!--Api Auth token-->
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label for="otp"><span class="small">OTP</span></label>
+										<input type="text" name="otp" placeholder="OPT" required="" class="form-control">
+									</div>
+								</div>
+							</div>
+							<hr />
+							<button id="pay" class="btn btn-primary col-md-6">Procced</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>

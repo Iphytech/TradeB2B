@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-7">
+      <div class="overview">
+        <div class="template-card">
+          <div class="name">
+            <h2 class="h2-size">{{gig.title}}</h2>
+            <hr />
+            <img class="image-test" src="{{gig.picture}}"/>
+
+          </div>
+        </div>
+      </div>
+      <div class="overview">
+        <div class="about-card">
+          <div class="name">
+            <h2 class="h2-size">About Gig</h2>
+            <hr />
+            <h4> {{ gig.about }} </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-2">
+    <div class="overview">
+      <div class="order-card">
+        <div class="name">
+          <h3> #{{ gig.price }} order Details</h3>
+          <a href="/checkout/single_package/{{gig._id}}" class="btn btn-success btn-lg">Proceed to order </a>
+          <hr />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
