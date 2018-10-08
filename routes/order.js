@@ -2,8 +2,8 @@ const router = require('express').Router();
 const Ravepay = require('ravepay');
 const Gig = require('../models/gig');
 
-const PUBLICK_KEY = "FLWPUBK-8f718785a8d26352ada64c437de50b7f-X";
-const SECRET_KEY = "FLWSECK-98cf00a5bdde21e3ba96a955e4f33cfc-X";
+const PUBLICK_KEY = "";
+const SECRET_KEY = "";
 let ref;
 let totalPrice;
 const rave = new Ravepay(PUBLICK_KEY, SECRET_KEY, false);
